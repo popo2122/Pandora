@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pandora</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/pc.css" />
+    <link rel="stylesheet" href="swiper/swiper.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700;800&display=swap"
@@ -15,25 +18,27 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/pc.css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- <script src="js/jquery.mousewheel.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="swiper/swiper.js"></script>
   </head>
+
   <body>
     <div id="wrap">
       <!-- header -->
       <header>
-          <!-- toggle -->
+        <!-- toggle -->
         <div class="header__toggle">
           <span class="toggle__line"></span>
           <span class="toggle__line"></span>
           <span class="toggle__line"></span>
         </div>
 
-         <!-- logo -->
-         <div class="header__logo">
+        <!-- logo -->
+        <div class="header__logo">
           <img src="img/header_logo.png" alt="header logo" />
         </div>
-        
 
         <!-- icon -->
         <div class="header__icon">
@@ -45,7 +50,7 @@
         <!-- menu slides -->
         <div class="header__menu-wrap">
           <div class="menu__logo">
-            <img src="img/header_logo.png" alt="menu logo">
+            <img src="img/header_logo.png" alt="menu logo" />
           </div>
 
           <div class="menu__close">
@@ -61,16 +66,11 @@
             <li><a href="#">Universe</a></li>
           </ul>
         </div>
-        
-
-       
-        
       </header>
 
       <!-- section1 : main -->
       <section id="main">
         <div class="main__slides-wrap">
-
           <!-- 첫번째 슬라이드 -->
           <div class="main__slide slide01">
             <div class="slide__img">
@@ -86,12 +86,14 @@
           </div>
 
           <!-- 두번째 슬라이드  -->
-          <div class="main__slide slide02">
+          <div class="main__slide slide02 slide--active">
             <div class="slide__img">
               <img src="img/sec1_garden.jpg" alt="garden collection img" />
             </div>
-            <h1 class="slide__text">pandora<br />Garden Collection</h1>
-            <div class="slide__small-img">
+            <h1 class="slide__text slide__text--showing">
+              pandora<br />Garden Collection
+            </h1>
+            <div class="slide__small-img small-img--showing">
               <img
                 src="img/sec1_garden_earing.png"
                 alt="garden collection earing"
@@ -104,60 +106,49 @@
             <div class="slide__img">
               <img src="img/sec1_me.jpg" alt="me collection img" />
             </div>
-            <h1 class="slide__text">pandora<br />Me Designed by Milie</h1>
+            <h1 class="slide__text">pandora<br />Me by Milie</h1>
             <div class="slide__small-img">
               <img src="img/sec1_me_charm.png" alt="garden collection charm" />
             </div>
           </div>
-
         </div>
         <!-- arrow -->
         <div class="main__arrow">
-          <div class="arrow__prev">
-            <img src="img/sec1_prev_arrow.png" alt="prev" />
-          </div>
-          <div class="arrow__next">
-            <img src="img/sec1_next_arrow.png" alt="next" />
-          </div>
+          <img src="img/sec1_prev_arrow.png" alt="prev" class="arrow__prev" />
+          <img src="img/sec1_next_arrow.png" alt="next" class="arrow__next" />
         </div>
       </section>
 
       <!-- section2 : styling -->
       <section id="styling">
-        <div class="section__container">
+        <div class="section__container styling__container">
           <!-- left side -->
           <div class="styling__left">
             <div class="styling__title-box">
               <h3 class="styling__sub">2021 Mar.</h3>
-              <h2 class="styling__title">panodra Styling</h2>
+              <h2 class="styling__title">pandora Styling</h2>
             </div>
 
             <div class="styling__img-box">
-              <div class="img__mix-metal">
-                <img src="img/sec2_metal.jpg" alt="mix metal styling" />
-              </div>
+              <img src="img/sec2_metal.jpg" alt="mix metal styling" />
               <p class="img__name">Mix Metal Style</p>
             </div>
           </div>
           <!-- right side -->
           <div class="styling__right">
             <div class="styling__img-box">
-              <div class="img__love">
-                <img src="img/sec2_love.jpg" alt="love story" />
-              </div>
+              <img src="img/sec2_love.jpg" alt="love story" />
               <p class="img__name">Love Story</p>
             </div>
-            <div class="styling__img-box">
-              <div class="img__swimmer">
+            <div class="styling__bottom">
+              <div class="styling__img-box">
                 <img src="img/sec2_swimmer.jpg" alt="soul swimmers" />
+                <p class="img__name">Soul Swimmers</p>
               </div>
-              <p class="img__name">Soul Swimmers</p>
-            </div>
-            <div class="styling__img-box">
-              <div class="img__sounds">
+              <div class="styling__img-box">
                 <img src="img/sec2_soul.jpg" alt="sister sounds" />
+                <p class="img__name">Sister Sounds</p>
               </div>
-              <p class="img__name">Sister Sounds</p>
             </div>
           </div>
         </div>
@@ -166,15 +157,17 @@
       <!-- section3 : pandora for unicef -->
       <section id="unicef">
         <div class="section__container">
-          <h2 class="unicef__title">pandora for UNICEF</h2>
-          <div class="unicef__sub">
-            <p class="unicef__desc">
-              변화를 위한 참들을 통해<br />Pandora는 어린이들의<br />목소리를
-              지원하는 UNICEF를<br />위한 기금을 조성합니다.
-            </p>
-            <button class="unicef__btn">
-              <span>후원 참여하기</span>
-            </button>
+          <div class="unicef__title-box">
+            <h2 class="unicef__title">pandora<br />for<br />UNICEF</h2>
+            <div class="unicef__sub">
+              <p class="unicef__desc">
+                변화를 위한 참들을 통해<br />Pandora는 어린이들의<br />목소리를
+                지원하는 UNICEF를<br />위한 기금을 조성합니다.
+              </p>
+              <button class="unicef__btn">
+                <span>후원 참여하기</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -183,9 +176,7 @@
       <section id="product">
         <div class="section__container">
           <div class="product__title">
-            <h1>Jewelry</h1>
-            <h1>that make you</h1>
-            <h1>look twice</h1>
+            <h2>Jewelry<br />that make you<br />look twice</h2>
             <p class="product__sub">마음에 드는 컬렉션과 함께 하세요</p>
           </div>
 
@@ -260,53 +251,66 @@
             </div>
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
 
       <!-- footer -->
-      <div class="section__container">
+      <footer>
+        <div class="section__container">
+          <div class="footer__top">
+            <!-- footer left side -->
+            <div class="footer__left">
+              <p>가까운 PANDORA 스토어를 검색하세요</p>
+              <div class="footer__search">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="우편번호 / 시 / 도"
+                />
+                <button class="search__btn">
+                  <img
+                    src="img/footer_search_icon.png"
+                    alt="search icon"
+                    class="search__icon"
+                  />
+                </button>
+              </div>
+            </div>
 
-        <!-- footer left side -->
-        <div class="footer__left">
-          <p class="footer__left-title">가까운 PANDORA 스토어를 검색하세요</p>
-          <div class="footer__search">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="우편번호 / 시 / 도"
-            />
-            <img
-              src="img/footer_search_icon.png"
-              alt="search icon"
-              class="search__icon"
-            />
+            <!-- footer right side -->
+            <div class="footer__right">
+              <div class="footer__loca">
+                <div class="loca__top">
+                  <img
+                    src="img/footer_location_icon.png"
+                    alt="footer_loca icon"
+                  />
+                  <p>CHANGE LOCATION</p>
+                </div>
+
+                <button class="footer__loca__btn">REPUBLIC OF KOREA</button>
+              </div>
+              <div class="footer__sns">
+                <p>PANDORA를 팔로우해주세요</p>
+                <div class="sns__img">
+                  <img src="img/footer_insta_icon.png" alt="instagram" />
+                  <img src="img/footer_facebook_icon.png" alt="facebook" />
+                  <img src="img/footer_youtube_icon.png" alt="youtube" />
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- footer bottom side -->
+          <p class="footer__bottom">
+            Responsibility&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;클럽&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;PANDORA사
+            채용&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Data
+            Protection&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;사이즈
+            안내&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;Privacy
+            Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;연락처
+          </p>
         </div>
-
-        <!-- footer right side -->
-        <div class="footer__right">
-          <div class="footer__loca">
-            <img src="img/footer_location_icon.png" alt="footer_loca icon" />
-            <p>CHANGE LOCATION</p>
-            <button class="footer__loca__btn">REPUBLIC OF KOREA</button>
-          </div>
-          <div class="footer__sns">
-            <img src="img/footer_insta_icon.png" alt="instagram" />
-            <img src="img/footer_facebook_icon.png" alt="facebook" />
-            <img src="img/footer_youtube_icon.png" alt="youtube" />
-          </div>
-        </div>
-
-        <!-- footer bottom side -->
-        <p class="footer__bottom">
-          Responsibility | 클럽 | PANDORA사 채용 | Data Protection | 사이즈 안내
-          | Privacy Policy | 연락처
-        </p>
-      </div>
       </footer>
     </div>
   </body>
