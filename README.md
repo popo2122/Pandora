@@ -14,7 +14,7 @@
   
 ### *💛 Code*
 
-- PC~MOBILE 반응형 지원 (pc는 1920＊1080에서 최적화)
+- PC 1920 * 1080에서 최적화
 - 메인 슬라이드는 jQuery를 사용하여 구현
   + appendTo,PrependTo사용하여 자연스럽게 슬라이드 흘러갈 수 있도록 구현
   + addClass,removeClass로 중앙에 오는 메인 이미지만 컬러로 나오도록 구현(CSS의 filter속성 이용)
