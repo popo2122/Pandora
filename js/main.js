@@ -55,13 +55,15 @@ $(function () {
   $(".arrow__next").click(function () {
     $(".main__slides-wrap").animate(
       {
-        left: -1800,
+        // left: -1590,
+        left: "-82.812%",
       },
       1100,
       function () {
         $(".main__slides-wrap")
           .css({
-            left: -600,
+            // left: -550,
+            left: "-28.645%",
           })
           .find(".main__slide:first")
           .appendTo(".main__slides-wrap");
@@ -77,11 +79,13 @@ $(function () {
   $(".arrow__prev").click(function () {
     $(".main__slides-wrap")
       .css({
-        left: -1780,
+        // left: -1500,
+        left: "-82.812%",
       })
       .animate(
         {
-          left: -600,
+          // left: -550,
+          left: "-28.645%",
         },
         1100
       )
@@ -93,19 +97,26 @@ $(function () {
     slideInactive(0);
   });
 
-  //next arrow auto-play
-  setInterval(function () {
-    $(".arrow__next").trigger("click");
-  }, 5000);
+  // next arrow auto-play
+  // setInterval(function () {
+  //   $(".arrow__next").trigger("click");
+  // }, 5000);
+
+  //unicef sub title hover
+  $(".unicef__img").hover(function () {
+    $(".unicef__title").fadeOut(500);
+    $(".unicef__sub").fadeIn(500);
+  });
 
   //product swiper
   var swiper = new Swiper(".product-swiper-container", {
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 20,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    grabCursor: true,
   });
 }); //end
