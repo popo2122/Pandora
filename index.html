@@ -7,6 +7,8 @@
     <title>Pandora</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/pc.css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="swiper/swiper.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -21,6 +23,7 @@
     <script src="js/jquery-3.5.1.js"></script>
     <!-- <script src="js/jquery.mousewheel.min.js"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/tab_mobile.js"></script>
     <script src="swiper/swiper.js"></script>
   </head>
 
@@ -119,6 +122,43 @@
           <img src="img/sec1_prev_arrow.png" alt="prev" class="arrow__prev" />
           <img src="img/sec1_next_arrow.png" alt="next" class="arrow__next" />
         </div>
+
+        <!-- tab & mobile ver. swiper -->
+        <div class="swiper-container main-swiper-container">
+          <div class="swiper-wrapper main-swiper-wrapper">
+            <!-- 첫번째 슬라이드 -->
+            <div class="swiper-slide main-swiper-slide">
+              <div class="mo-slide__img">
+                <img src="img/sec1_disney.jpg" alt="disney collection img" />
+              </div>
+              <h1 class="mo-slide__text">pandora<br />Disney Collection</h1>
+            </div>
+
+            <!-- 두번째 슬라이드 -->
+            <div class="swiper-slide main-swiper-slide">
+              <div class="mo-slide__img">
+                <img src="img/sec1_garden.jpg" alt="garden collection img" />
+              </div>
+              <h1 class="mo-slide__text">pandora<br />Garden Collection</h1>
+            </div>
+
+            <!-- 세번째 슬라이드 -->
+            <div class="swiper-slide main-swiper-slide">
+              <div class="mo-slide__img">
+                <img src="img/sec1_me.jpg" alt="me collection img" />
+              </div>
+              <h1 class="mo-slide__text">pandora Me</h1>
+            </div>
+          </div>
+          <!-- swiper Arrows -->
+<!--
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+-->         <!--swiper pagination-->
+            <div class="swiper-pagination"></div>
+            
+        </div>
       </section>
 
       <!-- section2 : styling -->
@@ -161,14 +201,36 @@
         <div class="unicef__img">
           <img src="img/sec3_bg_img.png" alt="bg img" />
         </div>
-        <div class="section__container">
-          <h2 class="unicef__title">pandora<br />for<br />UNICEF</h2>
-          <div class="unicef__sub">
+        <div class="section__container unicef__container">
+          <div class="unicef__text-box">
+            <h2 class="unicef__title">pandora<br />for UNICEF</h2>
             <p class="unicef__desc">
-              변화를 위한 참들을 통해<br />Pandora는 어린이들의<br />목소리를
-              지원하는 UNICEF를<br />위한 기금을 조성합니다.
+              변화를 위한 참들을 통해 Pandora는<br />
+              어린이들의 목소리를 지원하는<br />
+              UNICEF를 위한 기금을 조성합니다.
             </p>
             <button class="unicef__btn">
+              <span>후원 참여하기</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- tab & mobile ver. -->
+        <div class="mo-unicef">
+          <div class="mo-unicef__img">
+            <img src="img/mobile_unicef_bg.png" alt="mobile unicef bg img" />
+          </div>
+
+          <div class="mo-unicef__text-box">
+            <h2 class="mo-unicef__title unicef__title--moving">
+              pandora<br />for<br />UNICEF
+            </h2>
+            <p class="mo-unicef__desc">
+              변화를 위한 참들을 통해 Pandora는<br />
+              어린이들의 목소리를 지원하는<br />
+              UNICEF를 위한 기금을 조성합니다.
+            </p>
+            <button class="mo-unicef__btn">
               <span>후원 참여하기</span>
             </button>
           </div>
@@ -260,7 +322,7 @@
 
       <!-- footer -->
       <footer>
-        <div class="section__container">
+        <div class="section__container footer__container">
           <div class="footer__top">
             <!-- footer left side -->
             <div class="footer__left">
