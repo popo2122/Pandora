@@ -80,6 +80,34 @@ p {
     background-color: var(--color-black);
   }
 
+  @keyframes toggle-animate {
+    from {
+      width: 45px;
+    }
+    to {
+      width: 30px;
+    }
+  }
+
+  @keyframes toggle-original {
+    from {
+      width: 30px;
+    }
+    to {
+      width: 45px;
+    }
+  }
+
+  .toggle__line:first-child.toggle--animate,
+  .toggle__line:last-child.toggle--animate {
+    animation: toggle-animate 300ms linear forwards;
+  }
+
+  .toggle__line:first-child.toggle--original,
+  .toggle__line:last-child.toggle--original {
+    animation: toggle-original 300ms linear forwards;
+  }
+
   .header__logo {
     width: 250px;
     height: 60px;
@@ -206,7 +234,9 @@ p {
     /* top: 150px; */
     top: 7.812%;
     /* left: -550px; */
-    left: -28.645%;
+/*    left: -28.645%;*/
+/*      left: -590px;*/
+      left: -30.729%;
     display: flex;
     width: calc(100% * 3);
   }
@@ -335,6 +365,10 @@ p {
     right: 23%;
   }
 
+  .main-swiper-container {
+    display: none;
+  }
+
   /* section2 : styling */
   #styling {
     width: 100%;
@@ -457,19 +491,19 @@ p {
     width: 100%;
   }
 
-  .unicef__title {
+  .unicef__text-box {
+    opacity: 0;
     position: absolute;
-    top: 32%;
-    left: 30%;
-    text-align: center;
+    top: 25%;
+    left: 10%;
   }
 
-  .unicef__sub {
-    display: none;
-    position: absolute;
-    top: 32%;
-    left: 28%;
-    text-align: end;
+  .unicef__title {
+    margin-bottom: 20px;
+  }
+
+  .unicef__desc {
+    line-height: 28px;
   }
 
   .unicef__btn {
@@ -485,6 +519,10 @@ p {
     color: var(--color-white);
   }
 
+  .mo-unicef {
+    display: none;
+  }
+
   /*section4 : product slides*/
   #product {
     position: relative;
@@ -497,6 +535,7 @@ p {
     width: 100%;
     height: auto;
     padding-top: 50px;
+    padding-right: 35px;
     text-align: end;
     line-height: 55px;
     /*    background-color: lightgoldenrodyellow;*/
@@ -574,8 +613,12 @@ p {
 
   .search__btn {
     position: absolute;
-    top: 16px;
+    top: 18px;
     right: 310px;
+  }
+
+  .search__btn > img {
+    width: 23px;
   }
 
   /*footer right side*/
@@ -628,6 +671,11 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+  }
+
+  .sns__img img {
+    width: 30px;
+    height: 30px;
   }
 
   .footer__bottom {
