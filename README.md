@@ -16,12 +16,13 @@
   
 ### *💛 Code*
 
-- PC 1920 * 1080에서 최적화 (현재 ~1440까지 반응형 지원하여 페이지 내 모든 이미지 사이즈 자연스럽게 줄어들도록 구현)
+- PC 1920 * 1080에서 최적화, MOBILE까지 반응형 지원(~500까지 최적화)
 - 메인 이미지 슬라이드는 jQuery를 사용하여 구현
   + appendTo,PrependTo로 반복되는 슬라이드 자연스럽게 흘러가도록 함
   + addClass,removeClass로 중앙에 오는 메인 이미지만 컬러+사이즈 커지도록 구현(CSS의 filter,transform속성 이용)
 - 메뉴 각각 hover했을 때 색이 변경되는 효과는 CSS의 background속성 이용하여 구현
-- 제품 이미지 슬라이드는 Swiper 라이브러리를 활용
+- styling섹션의 hover는 CSS, unicef섹션의 텍스트 hover는 jQuery사용
+- 제품 이미지 슬라이드와 모바일 메인 슬라이드는 Swiper 라이브러리를 활용
     - 참고 링크 : [swiper](https://swiperjs.com/demos)
 
 
