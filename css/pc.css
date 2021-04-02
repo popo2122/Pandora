@@ -50,7 +50,6 @@ p {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    /* background-color: lightgoldenrodyellow; */
   }
 
   /* header */
@@ -60,7 +59,6 @@ p {
     align-items: center;
     width: 100%;
     height: 100px;
-    /*    background-color: lightblue;*/
   }
 
   .header__toggle {
@@ -69,7 +67,6 @@ p {
     width: 45px;
     height: 40px;
     cursor: pointer;
-    /*    background-color: lightgoldenrodyellow;*/
   }
 
   .toggle__line {
@@ -233,8 +230,6 @@ p {
     position: absolute;
     /* top: 150px; */
     top: 7.812%;
-    /* left: -550px; */
-/*    left: -28.645%;*/
 /*      left: -590px;*/
       left: -30.729%;
     display: flex;
@@ -304,7 +299,6 @@ p {
   }
 
   .slide03 .slide__small-img {
-    /* right: -850px; */
     bottom: 50%;
   }
 
@@ -377,7 +371,6 @@ p {
     /* margin-bottom: 200px; */
     margin-bottom: 10.416vw;
     background: url("../img/sec2_bg.png") no-repeat center/cover;
-    /* background-color: lightgrey; */
   }
 
   .styling__container {
@@ -411,7 +404,6 @@ p {
     font-weight: 900;
     color: var(--color-white);
     transition: opacity 300ms linear;
-    /* background-color: lightskyblue; */
   }
 
   /* styling left side */
@@ -420,14 +412,12 @@ p {
     width: 31.093vw;
     height: 100%;
     margin-right: 47px;
-    /* background-color: #f2a2b2; */
   }
 
   .styling__title-box {
     width: 100%;
     height: auto;
     margin: 100px 0 50px 20px;
-    /* background-color: lightgoldenrodyellow; */
   }
 
   .styling__left > .styling__img-box {
@@ -445,7 +435,6 @@ p {
     width: 28.958vw;
     height: 100%;
     margin-top: 60px;
-    /* float: right; */
   }
 
   .styling__right > .styling__img-box {
@@ -479,8 +468,6 @@ p {
     width: 100%;
     /* height: 1080px; */
     height: 56.25vw;
-    /* background: url("../img/sec3_bg.png") no-repeat center/cover; */
-    /*    background-color: lightskyblue;*/
   }
 
   .unicef__img {
@@ -528,7 +515,6 @@ p {
     position: relative;
     width: 100%;
     height: 100%;
-    /*    background-color: lightblue;*/
   }
 
   .product__title {
@@ -538,7 +524,6 @@ p {
     padding-right: 35px;
     text-align: end;
     line-height: 55px;
-    /*    background-color: lightgoldenrodyellow;*/
   }
 
   .product__sub {

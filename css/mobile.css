@@ -20,7 +20,6 @@
         width: 95%;
         height: 100%;
         margin: 0 auto;
-        /* background-color: lightgoldenrodyellow; */
     }
 
     /* header */
@@ -30,7 +29,6 @@
         align-items: center;
         width: 100%;
         height: 100px;
-        /*    background-color: lightblue;*/
     }
 
     .header__toggle {
@@ -41,7 +39,6 @@
         width: 30px;
         height: 25px;
         cursor: pointer;
-        /*    background-color: lightgoldenrodyellow;*/
     }
 
     .toggle__line {
@@ -219,7 +216,6 @@
         /* margin-bottom: 200px; */
         margin-bottom: 10.416vw;
         background: url("../img/sec2_bg.png") no-repeat 35% 5% / cover;
-        /* background-color: lightgrey; */
     }
 
     .styling__container {
@@ -255,7 +251,6 @@
         font-weight: 900;
         color: var(--color-white);
         transition: opacity 300ms linear;
-        /* background-color: lightskyblue; */
     }
 
     /* styling left side */
@@ -270,7 +265,6 @@
         height: auto;
         margin: 50px 20px;
         /* margin: 100px 0 50px 20px; */
-        /* background-color: lightgoldenrodyellow; */
     }
 
     .styling__left > .styling__img-box {
@@ -289,7 +283,6 @@
         height: 100%;
         /* margin-top: 20px; */
         margin-top: 2.083vw;
-        /* float: right; */
     }
 
     .styling__right > .styling__img-box {
@@ -406,7 +399,6 @@
         position: relative;
         width: 100%;
         height: 100%;
-        /*    background-color: lightblue;*/
     }
 
     .product__title {
